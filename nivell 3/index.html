@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="lletres.js"></script>
+    <title>Nivell 3</title>
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="container">
+            <h2 class="text-light text-center mt-5">Exercicis nivell 1</h2>
+            <h4 class="text-light mt-4">Escriu un nom i fes click sobre l'exercici que vulguis.</h4>
+            <input id="nom" type="text" class="form-control col-3 mt-4" placeholder="Introdueix un nom" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="cognom" type="text" class="form-control col-3 mt-4" placeholder="Introdueix un cognom" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="container col-5 mt-4">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success m-4" onclick="un()">Exercici 1</button>
+                <button type="button" class="btn btn-primary m-4" onclick="dos()">Exercici 2</button>
+                <button type="button" class="btn btn-warning m-4" onclick="tres()">Exercici 3</button>
+                <button type="button" class="btn btn-info m-4" onclick="quatre()">Exercici 4</button>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <textarea id="resultat" rows="10" type="text" class="form-control" placeholder="Resultat" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+        </div>
+        <div class="container text-center">
+            <h2 class="text-light mt-5 text-center">Exercici nivell 2</h2>
+            <h4 class="text-light mt-4 text-start">Escriu un text on trobar emails</h4>
+            <textarea id="text" rows="30" type="text" class="form-control mt-4" placeholder="Introdueix un text" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+            <button type="button" class="btn btn-info m-5 w-25" onclick="buscar()">TROBA ELS MAILS</button>
+            <textarea id="emails" rows="10" type="text" class="form-control mb-5" placeholder="Resultat" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+
+        </div>
+            
+    </div>
+</body>
+</html>
