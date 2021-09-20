@@ -22,9 +22,9 @@ function dos(){
     var newNom = Array.from(nom);
 
     for(i=0; i<newNom.length;i++){
-        if(newNom[i] === "A" || newNom[i] === "I"){
+        if(newNom[i] === "A" || newNom[i] === "E" || newNom[i] === "I" || newNom[i] === "O" || newNom[i] === "U" || newNom[i] === "a" || newNom[i] === "e" || newNom[i] === "i" || newNom[i] === "o" || newNom[i] === "u"){
             console.log("He trobat la VOCAL: " + newNom[i]);
-            document.getElementById("resultat").innerHTML += "He trobat la VOCAL: " + newNom[i]  + "\n";
+            document.getElementById("resultat").value += "He trobat la VOCAL: " + newNom[i]  + "\n";
         } else if(newNom[i] === "0" || newNom[i] === "1" || newNom[i] === "2" || newNom[i] === "3" || newNom[i] === "4" || newNom[i] === "5" || newNom[i] === "6" || newNom[i] === "7" || newNom[i] === "8" || newNom[i] === "9"){
             console.log("Els noms de persones no contenen el número: " + newNom[i]);
             document.getElementById("resultat").value += "Els noms de persones no contenen el número: " + newNom[i]  + "\n";
@@ -38,7 +38,21 @@ function dos(){
 
 //exercici 3
 
-function tres(){
+function tres() {
+    
+    let nom = document.getElementById("nom").value;
+    let newNom = Array.from(nom);
+    
+
+    let map = newNom.reduce(function (lletra, index) {
+            lletra[index] = (lletra[index] || 0) + 1;
+            return lletra;
+        }, {});
+    
+
+        document.getElementById("resultat").innerHTML += JSON.stringify(map);
+
+        console.log(map);
     
 }
 

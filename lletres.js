@@ -23,36 +23,14 @@ for(i=0; i<nom.length;i++){
 //exercici 3
 
 var nom = ["A", "L", "I", "C", "I", "A"];
-var result={};
 
-var result = nom.map(function(lletra, index){
-     if (!lletra[index])
-         lletra[index] = 0;
-         ++ lletra[index];
-         return lletra;
-     }     
-);
+    let map = nom.reduce(function (lletra, index) {
+        lletra[index] = (lletra[index] || 0) + 1;
+        return lletra;
+    }, {});
 
-
-console.log(result);
-
-//amb reduce
-
-    // var result = nom.reduce((lletra, i) => {lletra[i] = (lletra[i] || 0)+1;
-    //     return lletra}, {} );
-
-    // console.log(result);
-
-// amb for
-
-    // for(i = 0; i < nom.length; ++i) {
-    //      if(!result[nom[i]])
-    //     result[nom[i]] = 0; 
-    //     ++result[nom[i]];
-    //      }
     
-    // console.log(result);
-
+    console.log(map);
 
 
 // exercici 4
