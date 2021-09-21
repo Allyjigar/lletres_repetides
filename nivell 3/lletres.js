@@ -22,6 +22,7 @@ function dos(){
     var newNom = Array.from(nom);
 
     for(i=0; i<newNom.length;i++){
+        if(nom[i] === "A" || nom[i] === "E" || nom[i] === "I" || nom[i] === "O" || nom[i] === "U" || nom[i] === "a" || nom[i] === "e" || nom[i] === "i" || nom[i] === "o" || nom[i] === "u"){
             console.log("He trobat la VOCAL: " + newNom[i]);
             document.getElementById("resultat").value += "He trobat la VOCAL: " + newNom[i]  + "\n";
         } else if(newNom[i] === "0" || newNom[i] === "1" || newNom[i] === "2" || newNom[i] === "3" || newNom[i] === "4" || newNom[i] === "5" || newNom[i] === "6" || newNom[i] === "7" || newNom[i] === "8" || newNom[i] === "9"){
